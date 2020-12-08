@@ -24,7 +24,7 @@ public class Commande  {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
+    @Basic(optional = false) // nullable=false
     @Column(name = "id")
     private Integer id;
     @Basic(optional = false)
