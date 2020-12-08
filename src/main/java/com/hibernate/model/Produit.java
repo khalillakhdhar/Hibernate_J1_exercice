@@ -21,7 +21,6 @@ import javax.persistence.Table;
 @Table(name = "produit")
 public class Produit {
 
-    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
