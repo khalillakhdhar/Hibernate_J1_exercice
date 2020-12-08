@@ -19,30 +19,24 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "produit")
-
 public class Produit {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
-    @Column(name = "id")
+    
+    
     private Integer id;
-    @Basic(optional = false)
-    @Column(name = "titre")
+    
     private String titre;
-    @Basic(optional = false)
-    @Column(name = "photo")
+    
     private String photo;
-    @Basic(optional = false)
-    @Lob
-    @Column(name = "description")
+    
+    
     private String description;
-    @Basic(optional = false)
-    @Column(name = "prix")
+    
     private float prix;
-    @Basic(optional = false)
-    @Column(name = "id_user")
+    
     private int idUser;
     @JoinColumn(name = "categorie", referencedColumnName = "titre")
     @ManyToOne(optional = false)
